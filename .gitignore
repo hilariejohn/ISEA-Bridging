@@ -1,0 +1,14 @@
+# Credentials & Keys
+*.pem
+*.key
+*.pub
+
+# Binaries & Logs
+*.out
+*.o
+*.log
+hello_world_executable
+
+# VM Images
+*.iso
+*.vdi
