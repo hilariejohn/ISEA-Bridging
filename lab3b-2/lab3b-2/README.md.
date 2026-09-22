@@ -1,0 +1,14 @@
+# Lab 3b-2: System Services & Network Shares Setup
+
+## Overview
+This lab covers the configuration and status verification of essential Linux system services, network file sharing (Samba & NFS), containerization (Docker), and database services.
+
+## Services Configured and Verified
+- **Samba (SMB)**: Created `[LabShare]` mapped to `/srv/samba/share` with guest access. Verified via `testparm -s` and `systemctl status smbd`.
+- **NFS**: Exported `/var/nfs/lab_share`. Verified using `showmount -e localhost` and `systemctl status nfs-kernel-server`.
+- **MariaDB**: Active and running (`systemctl status mariadb`).
+- **Docker**: Active daemon (`systemctl status docker`) and successfully verified container execution using `docker run hello-world`.
+- **Chrony & Rsyslog**: Time synchronization and system logging services verified active.
+
+## Screenshots
+All output screenshots demonstrating successful execution are located in the `screenshots/` directory.
